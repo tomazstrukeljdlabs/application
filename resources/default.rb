@@ -36,7 +36,7 @@ attribute :path, :kind_of => String
 attribute :owner, :kind_of => String
 attribute :group, :kind_of => String
 attribute :keep_releases, :kind_of => Integer, :default => 5
-attribute :strategy, :kind_of => [String, Symbol], :default => :deploy_revision
+attribute :strategy, :kind_of => [String, Symbol], :default => :timestamped_deploy
 attribute :scm_provider, :kind_of => [Class, String, Symbol]
 attribute :revision, :kind_of => String
 attribute :repository, :kind_of => String
